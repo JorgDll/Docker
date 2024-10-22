@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.CSS">
+    <link rel="shortcut icon" href="ASSETS/docker-icon.ico" type="image/x-icon">
+    <title>¿Que es Docker?</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="ASSETS/docker-logo-white.png" alt="">
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Uso.html">Uso</a></li>
+                <li><a href="Aplicaciones.html">aplicaciones</a></li>
+            </ul>
+        </nav>
+        <div class="contents-list">
+            <ul>
+                <h3>CONTENIDOS</h3>
+                <li><a href="#que-es?">¿Que es?</a></li>
+                <li><a href="#arq">Arquitectura</a></li>
+                <li><a href="#ventajas">Ventajas</a></li>
+            </ul>
+        </div>
+        <div class="intro">
+            <h1>¿Que es?</h1>
+            <div id="que-es?" class="que-es">
+                    <p>
+                        Docker es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software, proporcionando una capa adicional de abstracción y automatización de virtualización de aplicaciones en múltiples sistemas operativos.
+                        <br>
+                        Un contenedor de Docker es un conocido contenedor ejecutable, independiente, ligero que integra todo lo necesario para ejecutar una aplicación, incluidas bibliotecas, herramientas del sistema, código y tiempo de ejecución. Docker es también una plataforma de software que permite a los desarrolladores crear, probar e implementar aplicaciones en contenedores de forma rápida.
+                        <br>
+                        Los servicios de contenedores o <acronym title="Containers as a Service">CaaS</acronym> son servicios gestionados en la nube que administran el ciclo de vida de los contenedores. Los servicios de contenedores ayudan a orquestar (iniciar, detener, ampliar) el tiempo de ejecución de los contenedores. Con los servicios de contenedor, puede simplificar, automatizar y acelerar el desarrollo de sus aplicaciones y el ciclo de vida de su implementación.
+                    </p>
+                <div class="docker-img">
+                    <img src="ASSETS/docker-mark-blue.png" alt="">
+                </div>
+            </div>
+            <br>
+            <div id="arq">
+                <h1>Arquitectura y Términos</h1>
+                <ul>
+                    <li>
+                        <strong>Docker Host: </strong>
+                        es una máquina física o virtual que ejecuta Linux (u otro sistema operativo compatible con Docker-Engine).
+                    </li>
+                    <li>
+                        <strong>Docker Engine: </strong>
+                        El software de host de código abierto que crea y ejecuta los contenedores. Los motores de Docker funcionan como la aplicación del servidor del cliente que que admite contenedores en varios servidores Windows y sistemas operativos Linux, como Oracle Linux, CentOS, Debian, Fedora, RHEL, SUSE y Ubuntu.
+                    </li>
+                    <li>
+                        <strong>Docker Daemon: </strong>
+                        es un servicio que crea y administra imágenes Docker, utilizando los comandos del cliente. Esencialmente, daemon sirve como centro de control para implementación Docker.
+                    </li>
+                    <li>
+                        <strong>Contenedores Docker: </strong>
+                        A diferencia de una máquina virtual que proporciona virtualización de hardware, un contenedor proporciona virtualización ligera a nivel de sistema operativo mediante la abstracción del "espacio del usuario". Los contenedores comparten el núcleo del sistema host con otros contenedores. Un contenedor, que se ejecuta en el sistema operativo host, es una unidad de software estándar que empaqueta código y todas sus dependencias, para que las aplicaciones se puedan ejecutar de forma rápida y fiable de un entorno a otro. Los contenedores no son persistentes y se activan desde imágenes.
+                    </li>
+                    <li>
+                        <strong>Imagenes de Docker: </strong>
+                        Colección de software que se ejecutará como un contenedor que incluye un conjunto de instrucciones para crear un contenedor que se pueda ejecutar en la plataforma Docker. Las imágenes no son modificables, de modo que para realizar cambios en una imagen es preciso crear otra nueva.
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div id="ventajas">
+                <h1>Ventajas</h1>
+                <table>
+                    <tr>
+                        <th><img src="ASSETS/portabilidad-img.png" alt="" height="150px" width="150px"></th>
+                        <th><img src="ASSETS/reuse-img.png" alt="" height="150px" width="150px""></th>
+                        <th><img src="ASSETS/update-img.png" alt="" height="150px" width="150px""></th>
+                    </tr>
+                    <tr class="titulo-tabla">
+                        <th>Portabilidad Fluida y Mejorada</th>
+                        <th>Reutilizacion de Contenedores</th>
+                        <th>Actualizacion Ligera</th>
+                    </tr>
+                    <tr class="parrafo-tabla">
+                        <th>
+                            Aunque los <a href="https://www.redhat.com/es/topics/containers/whats-a-linux-container">contenedores LXC</a> suelen hacer referencia a configuraciones específicas de la máquina, los contenedores Docker se ejecutan sin modificaciones en cualquier escritorio, centro de datos o entorno de computación en la nube .
+                        </th>
+                        <th>
+                            La reutilización de contenedores es facilitada mediante registros públicos o privados donde los desarrolladores pueden acceder a imágenes preconfiguradas. <a href="https://keepcoding.io/blog/que-es-docker-hub/">Docker Hub</a>, por ejemplo, es un registro de código abierto que contiene miles de imágenes de contenedores contribuidas por usuarios de todo el mundo. Estas imágenes pueden ser reutilizadas, modificadas y personalizadas según las necesidades de un proyecto, lo que reduce el tiempo y el esfuerzo de configuración de entornos de desarrollo o producción.
+                        </th>
+                        <th>
+                            Con Docker, los desarrolladores pueden combinar varios procesos en un único contenedor. Esta flexibilidad permite crear una aplicación que puede seguir funcionando mientras una de sus partes está fuera de servicio para una actualización o reparación. 
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><img src="ASSETS/escalabilidad-img.png" alt="" height="150px" width="150px"></th>
+                        <th><img src="ASSETS/auto-img.png" alt="" height="150px" width="150px"></th>
+                        <th><img src="ASSETS/ahorro-img.png" alt="" height="150px" width="150px"></th>
+                    </tr>
+                    <tr class="titulo-tabla">
+                        <th>Escalabilidad</th>
+                        <th>Automatización</th>
+                        <th>Eficiencia de Recursos</th>
+                    </tr>
+                    <tr class="parrafo-tabla">
+                        <th>
+                            Facilita la escalabilidad de las aplicaciones. Puedes crear múltiples instancias de un contenedor y distribuir la carga de trabajo de manera eficiente mediante herramientas de orquestación de contenedores como Kubernetes o Docker Swarm. Esto permite adaptar rápidamente la capacidad de tu aplicación según la demanda, lo que es esencial en entornos de alta carga.
+                        </th>
+                        <th>
+                            con la ayuda de las tareas cron y los contenedores Docker, los usuarios pueden automatizar su trabajo fácilmente. La automatización ayuda a los desarrolladores a evitar tareas tediosas y repetitivas, así como a ahorrar tiempo.
+                        </th>
+                        <th>
+                            utiliza menos recursos en comparación con las máquinas virtuales tradicionales. Debido a que los contenedores comparten el mismo kernel del sistema operativo subyacente, son mucho más ligeros y requieren menos espacio en disco y memoria RAM. Esto permite ejecutar más aplicaciones en una sola máquina, lo que ahorra costos de hardware y facilita la administración de recursos.
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <p>
+                Pagina creada utilizando informacion en linea de:
+                <a href="https://www.oracle.com/mx/cloud/cloud-native/container-registry/what-is-docker/#docker-basics">Oracle</a>, <a href="https://www.ibm.com/es-es/topics/docker">IBM</a>, <a href="https://www.redhat.com/es/topics/containers/what-is-docker">Red Hat</a>, <a href="https://aws.amazon.com/es/containers/">AWS</a>, <a href="https://es.wikipedia.org/wiki/Docker_(software)">Wikipedia</a>, <a href="https://keepcoding.io/blog/que-es-docker-hub/">KeepCoding</a> y repositorios de imagenes de libre uso como: <a href="https://www.freepik.es/">FREEP!K</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

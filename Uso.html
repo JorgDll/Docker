@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.CSS">
+    <link rel="shortcut icon" href="ASSETS/docker-icon.ico" type="image/x-icon">
+    <title>¿Que es Docker?</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="ASSETS/docker-logo-white.png" alt="">
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Uso.html">Uso</a></li>
+                <li><a href="Aplicaciones.html">aplicaciones</a></li>
+            </ul>
+        </nav>
+        <div class="contents-list">
+            <ul>
+                <h3>CONTENIDOS</h3>
+                <li><a href="#Docker-Compose?">¿Que es?</a></li>
+                <li><a href="#Caracteristicas">Caracteristicas</a></li>
+                <li><a href="#Comandos">Comandos</a></li>
+            </ul>
+        </div>
+        <div class="intro">
+            <h1>¿Que es Docker Compose?</h1>
+            <div id="Docker-Compose" class="que-es">
+                    <p>
+                        Docker Compose es una herramienta versátil que te permite definir y gestionar aplicaciones multi-contenedor de forma sencilla. Con Docker Compose, puedes describir la configuración de tu entorno de desarrollo en un archivo YAML, especificando los servicios, volúmenes y redes necesarios para tu aplicación. Luego, con un solo comando, puedes crear y ejecutar todos los contenedores definidos en tu archivo de configuración
+                    </p>
+            </div>
+            <br>
+            <div id="Caracteristicas">
+                <h1>Caracteristicas Principales</h1>
+                <ul>
+                    <li>
+                        <strong>Definición en un solo archivo: </strong>
+                        Docker Compose utiliza un archivo llamado docker-compose.yml en el que defines los servicios, redes y volúmenes que tu aplicación necesita. Todo está centralizado y es fácil de gestionar.
+                    </li>
+                    <li>
+                        <strong>Comandos sencillos: </strong>
+                        Con Docker Compose, puedes ejecutar, detener y gestionar contenedores de manera sencilla usando comandos como docker-compose up para iniciar la aplicación, y docker-compose down para detenerla.
+                    </li>
+                    <li>
+                        <strong>Compatibilidad con múltiples entornos: </strong>
+                        Docker Compose facilita la creación de entornos de desarrollo que se pueden replicar en producción. Puedes definir diferentes configuraciones según el entorno (desarrollo, prueba, producción).
+                    </li>
+                    <li>
+                        <strong>Ejecución paralela de contenedores: </strong>
+                        Compose te permite ejecutar todos los contenedores definidos en el archivo docker-compose.yml en paralelo, gestionando las dependencias y el orden en que deben iniciarse los servicios.
+                    </li>
+                </ul>
+            </div>
+            <div id="Comandos">
+                <h1>Comandos de Docker</h1>
+                <table>
+                    <tr class="titulo-tabla">
+                        <th>Comando</th>
+                        <th>Explicacion</th>
+                    </tr>
+                    <tr>
+                        <th>docker run [opciones] [imagen] [comando]</th>
+                        <th>Crea y ejecuta contenedores a partir de imágenes de Docker.</th>
+                    </tr>
+                    <tr>
+                        <th>docker pull/push [nombre_imagen]</th>
+                        <th>
+                            Los comandos docker pull y docker push se utilizan para descargar y subir imágenes a un registro de Docker, como Docker Hub.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>docker images [opciones]</th>
+                        <th>
+                            Se utiliza para mostrar una lista de las imágenes disponibles en el sistema.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>docker ps[opciones]</th>
+                        <th>
+                            Se utiliza para mostrar una lista de los contenedores en ejecución.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>docker stop [opciones] [nombre_contenedor]</th>
+                        <th>
+                            Se utiliza para detener uno o varios contenedores en ejecución.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>docker rm [opciones] [nombre_contenedor]</th>
+                        <th>Se utiliza para eliminar uno o varios contenedores.</th>
+                    </tr>
+                    <tr>
+                        <th>docker network [opciones]</th>
+                        <th>Se utiliza para gestionar las redes en Docker. Proporciona una forma de crear y configurar redes virtuales para permitir la comunicación entre contenedores.</th>
+                    </tr>
+                    <tr>
+                        <th>docker volume [opciones] [subcomando]</th>
+                        <th>
+                            Se utiliza para gestionar los volúmenes en Docker. Los volúmenes son una forma de persistir datos y compartirlos entre los contenedores y el host.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>docker-compose [opciones] [comando]</th>
+                        <th>
+                            Se utiliza para definir y gestionar aplicaciones multi-contenedor utilizando un archivo de configuración llamado docker-compose.yml. Este archivo describe los servicios, las redes y los volúmenes necesarios para la aplicación.
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <p>
+                Pagina creada utilizando informacion en linea de:
+                <a href="https://www.oracle.com/mx/cloud/cloud-native/container-registry/what-is-docker/#docker-basics">Oracle</a>, <a href="https://www.ibm.com/es-es/topics/docker">IBM</a>, <a href="https://www.redhat.com/es/topics/containers/what-is-docker">Red Hat</a>, <a href="https://aws.amazon.com/es/containers/">AWS</a>, <a href="https://es.wikipedia.org/wiki/Docker_(software)">Wikipedia</a>, <a href="https://keepcoding.io/blog/que-es-docker-hub/">KeepCoding</a> y repositorios de imagenes de libre uso como: <a href="https://www.freepik.es/">FREEP!K</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
